@@ -10,8 +10,13 @@ int main()
     float num2 = 0;
     cout << "Enter the first number\n";
     cin >> num1;
-    cout << "Enter the second number\n";
-    cin >> num2;
+
+    while (true) {
+        cout << "Enter the second number\n";
+        cin >> num2;
+        if (num2 != 0) break;
+        cout << "Second number must be non-zero!\n";
+    }
 
     float sum = num1 + num2;
     float difference = num1 - num2;
