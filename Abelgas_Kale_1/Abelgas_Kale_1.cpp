@@ -1,8 +1,18 @@
-// Abelgas_Kale_1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 using namespace std;
+
+float add(float n1, float n2) {
+    return n1 + n2;
+}
+float subtract(float n1, float n2) {
+    return n1 - n2;
+}
+float multiply(float n1, float n2) {
+    return n1 * n2;
+}
+float divide(float n1, float n2) {
+    return n1 / n2;
+}
 
 int main()
 {
@@ -18,13 +28,8 @@ int main()
         cout << "Second number must be non-zero!\n";
     }
 
-    float sum = num1 + num2;
-    float difference = num1 - num2;
-    float product = num1 * num2;
-    float quotient = num1 / num2;
-
-    cout << "Sum:" << sum << "\n";
-    cout << "Difference:" << difference << "\n";
-    cout << "Product:" << product << "\n";
-    cout << "Quotient:" << quotient << "\n";
+    cout << "Sum:" << add(num1, num2) << "\n";
+    cout << "Difference:" << subtract(num1, num2) << "\n";
+    cout << "Product:" << multiply(num1, num2) << "\n";
+    cout << "Quotient:" << divide(num1, num2) << "\n";
 }
